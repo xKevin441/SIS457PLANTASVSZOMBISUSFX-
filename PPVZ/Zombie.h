@@ -3,9 +3,10 @@
 using namespace std;
 class Zombie
 {
-private:
+public:
 	float posicionX;
 	float posicionY;
+public:
 	string color;
 	int vida;
 	float tamaño;

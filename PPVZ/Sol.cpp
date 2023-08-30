@@ -1,28 +1,19 @@
-#include <iostream>
-#include <string>
 #include "Sol.h"
 
 Sol::Sol()
 {
-	posX = 0.0f;
-	posY = 0.0f;
-	color = "Yellow";
-	cantEnergia = 25;
-	tiempoEspera = 15;
+	posX = 20;
+	posY = 30;
+	color = "amarillo";
+	cantEnergia = 10;
+	tiempoEspera = 20;
 }
 
-void Sol::aparecer(float posSiguienteX, float posSiguienteY)
+Sol::Sol(int _posX, int _posY, int _cantEnergia, int _tiempoEspera, string _color)
 {
-	posX = posSiguienteX;
-	posY = posSiguienteY;
-}
-
-void Sol::caida()
-{
-	posY -= 1.0f;
-}
-
-void Sol::desaparecer()
-{
-	cout << "Sol no capturado\n";
+	posX = _posX;
+	posY = _posY;
+	color = _color;
+	cantEnergia = _cantEnergia;
+	tiempoEspera = _tiempoEspera;
 }

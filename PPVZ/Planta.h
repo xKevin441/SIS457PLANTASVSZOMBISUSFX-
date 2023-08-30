@@ -5,7 +5,7 @@ using namespace std;
 
 class planta
 {
-private:
+public:
     string nombre;
     float posicionX;
     float posicionY;
@@ -19,6 +19,8 @@ private:
 
 public:
     planta();
+    planta(string _nombre);
+    planta(string _nombre, float _posicionX, float _posicionY, int _vida, int _costoSol, float _velocidadAtaque, int _rangoAtaque, bool _estado, int _daño, int _velocidadMovimientoEs);
     //Metodos accesores
     void setNombre(string _nombre) { nombre = _nombre; };
     string getNombre() { return nombre; }

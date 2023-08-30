@@ -1,38 +1,34 @@
 #pragma once
-#include <string>
+#include <iostream>
 using namespace std;
 
 class Sol
 {
 private:
-	float posX;
-	float posY;
+
+	int posX;
+	int posY;
 	string color;
 	int cantEnergia;
 	int tiempoEspera;
 
 public:
+
 	Sol();
-	//Metodos accesores
-	void setposX(int _posX) { posX = _posX; }
-	float getposX() { return posX; }
+	Sol(int _posX, int _posY, int _cantEnergia, int _tiempoEspera, string _color);
 
-	void setposY(int _posY) { posY = _posY; }
-	float getposY() { return posY; }
+	void setcaidaX(int _posX) { posX = _posX; }
+	int getcaidaX() { return posX; }
 
-	void setcolor(string _color) { color = _color; }
-	string getcolor() { return color; }
+	void setcaidaY(int _posY) { posY = _posY; }
+	int getcaidaY() { return posY; }
 
-	void setcantEnergia(int _cantEnergia) { cantEnergia = _cantEnergia; }
-	int getcantEnergia() { return cantEnergia; }
+	void setdesaparecer(int _tiempoEspera) { tiempoEspera = _tiempoEspera; }
+	int getdesaparecer() { return tiempoEspera; }
 
-	void settiempoEspera(int _tiempoEspera) { tiempoEspera = _tiempoEspera; }
-	int gettiempoEspera() { return tiempoEspera; }
+	void setenergiaS(int _cantEnergia) { cantEnergia = _cantEnergia; }
+	int getenergiaS() { return cantEnergia; }
 
-	//Metodos directos
-	void aparecer(float posSiguienteX, float posSiguienteY);
-	void caida();
-	void desaparecer();
-
+	void setcolorS(string _color) { color = _color; }
+	string getcolorS() { return color; }
 };
-

@@ -20,9 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Barra_de_progreso.h" />
+    <ClInclude Include="Cactus.h" />
+    <ClInclude Include="Calabaza.h" />
     <ClInclude Include="contadorSoles.h" />
     <ClInclude Include="Contador_monedas.h" />
+    <ClInclude Include="ExplotaNuez.h" />
     <ClInclude Include="Moneda.h" />
+    <ClInclude Include="NuezCascaraRabias.h" />
     <ClInclude Include="Pala.h" />
     <ClInclude Include="Planta.h" />
     <ClInclude Include="Podadora.h" />
@@ -30,14 +34,21 @@
     <ClInclude Include="Sol.h" />
     <ClInclude Include="tarjetasPlantas.h" />
     <ClInclude Include="Temporizador_carga_plantas.h" />
+    <ClInclude Include="ZombiBuzo.h" />
+    <ClInclude Include="ZombiCajita.h" />
     <ClInclude Include="Zombie.h" />
+    <ClInclude Include="ZombiPlayero.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Barra_de_progreso.cpp" />
+    <ClCompile Include="Cactus.cpp" />
+    <ClCompile Include="Calabaza.cpp" />
     <ClCompile Include="contadorSoles.cpp" />
     <ClCompile Include="Contador_monedas.cpp" />
-    <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="ExplotaNuez.cpp" />
     <ClCompile Include="Moneda.cpp" />
+    <ClCompile Include="NuezCascaraRabias.cpp" />
+    <ClCompile Include="Principal.cpp" />
     <ClCompile Include="Pala.cpp" />
     <ClCompile Include="Planta.cpp" />
     <ClCompile Include="Podadora.cpp" />
@@ -45,7 +56,10 @@
     <ClCompile Include="Sol.cpp" />
     <ClCompile Include="tarjetasPlantas.cpp" />
     <ClCompile Include="Temporizador_carga_plantas.cpp" />
+    <ClCompile Include="ZombiBuzo.cpp" />
+    <ClCompile Include="ZombiCajita.cpp" />
     <ClCompile Include="Zombie.cpp" />
+    <ClCompile Include="ZombiPlayero.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

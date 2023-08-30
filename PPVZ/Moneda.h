@@ -1,6 +1,7 @@
 #pragma once
-#include<string> 
+#include<iostream> 
 using namespace std;
+
 class moneda
 {
 private:
@@ -11,7 +12,9 @@ private:
 	string material;
 
 public:
+
 	moneda();
+	moneda(string _color, string _material, int _posicionY, int _posicionX, int _tiempoVida);
 
 	void setmoverX(int _posicionX) { posicionX = _posicionX; }
 	int getmoverX() { return posicionX; }
@@ -31,8 +34,4 @@ public:
 	void setmonedaM(string _material) { material = _material; }
 	string getmonedaM() { return material; }
 
-	//metodos directos
-	void aparecer(int posSiguienteX, int posSiguienteY);
-	void desaparecer();
-	
 };
