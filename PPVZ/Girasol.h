@@ -12,7 +12,7 @@ private:
 public:
     //Metodos constructores
     Girasol();
-    Girasol(float _posX, float _posY);
+    Girasol(float _posX, float _posY); 
 
     //Metodos
     void aparecer();
