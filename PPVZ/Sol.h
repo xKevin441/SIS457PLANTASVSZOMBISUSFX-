@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "contadorSoles.h"
 using namespace std;
 
 class Sol
@@ -15,20 +16,27 @@ private:
 public:
 
 	Sol();
+	Sol(float _posX, float _posY);
+	Sol(float _posX, float _posY, int _cantEnergia);
 	Sol(int _posX, int _posY, int _cantEnergia, int _tiempoEspera, string _color);
 
-	void setcaidaX(int _posX) { posX = _posX; }
-	int getcaidaX() { return posX; }
+	void setPosX(int _posX) { posX = _posX; }
+	int getPosX() { return posX; }
 
-	void setcaidaY(int _posY) { posY = _posY; }
-	int getcaidaY() { return posY; }
+	void setPosY(int _posY) { posY = _posY; }
+	int getPosY() { return posY; }
 
-	void setdesaparecer(int _tiempoEspera) { tiempoEspera = _tiempoEspera; }
-	int getdesaparecer() { return tiempoEspera; }
+	void setTiempoEspera(int _tiempoEspera) { tiempoEspera = _tiempoEspera; }
+	int getTiempoEspera() { return tiempoEspera; }
 
-	void setenergiaS(int _cantEnergia) { cantEnergia = _cantEnergia; }
-	int getenergiaS() { return cantEnergia; }
+	void setCantEnergia(int _cantEnergia) { cantEnergia = _cantEnergia; }
+	int getCantEnergia() { return cantEnergia; }
 
-	void setcolorS(string _color) { color = _color; }
-	string getcolorS() { return color; }
+	void setColor(string _color) { color = _color; }
+	string getColor() { return color; }
+
+	void aparecer();
+	void aparecer(float _posX, float _posY);
+	void desaparecer();
+	void capturarSol();
 };

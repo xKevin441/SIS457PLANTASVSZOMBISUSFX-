@@ -72,6 +72,18 @@
     <ClInclude Include="ZombiPlayero.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="PlantaGeneradoraSoles.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Girasol.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Birasol.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="SetaSolar.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zombie.cpp">
@@ -132,6 +144,18 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="ZombiPlayero.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="PlantaGeneradoraSoles.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Girasol.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Birasol.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="SetaSolar.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

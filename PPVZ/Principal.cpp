@@ -10,6 +10,12 @@
 #include "Podadora.h"
 #include "Rrastrillo.h"
 #include "Temporizador_carga_plantas.h"
+#include "PlantaGeneradoraSoles.h"
+#include "Girasol.h"
+#include "Birasol.h"
+#include "SetaSolar.h"
+
+
 using namespace std;
 
 int main() 
@@ -38,21 +44,14 @@ int main()
 
 
 	Sol sol;
-
 	sol.aparecer(20.0f, 50.0f);
 	sol.desaparecer();
-	cout << "\nPosicion X sol: " << sol.getposX() << endl;
-	cout << "Posicion Y sol: " << sol.getposY() << endl;
-	cout << "Estado sol: " << sol.getcantEnergia() << endl;
-	cout << "Tiempo de espera sol: " << sol.gettiempoEspera() << endl;
+	
 
 
 	moneda moneda;
-
 	moneda.aparecer(50, 100);
 	moneda.desaparecer();
-	cout << "\nPosicion X moneda: " << moneda.getmoverX() << endl;
-	cout << "Posicion Y moneda: " << moneda.getmoverY() << endl;
 
 
 	TarjetasPlantas tarjetasDePlantas;
@@ -114,6 +113,35 @@ int main()
 	ZombieGenerico.Caminar(10, 10, 20);
 	ZombieGenerico.Morir(1);
 	ZombieGenerico.explotarCabeza(0);
+
+
+	Girasol girasol(20, 20);
+	girasol.aparecer();
+	girasol.movimientoEstatico();
+	girasol.generarSol();
+	girasol.recogerSol();
+	contadorDeSoles.acumularSol(girasol.getValorSol());
+	
+	
+
+	Birasol birasol(23, 20);
+	birasol.aparecer();
+	birasol.movimientoEstatico();
+	birasol.generarSoles();
+
+
+	SetaSolar setaSolar(26, 20);
+	setaSolar.aparecer();
+	setaSolar.movimientoEstatico();
+	setaSolar.generarSol();
+	setaSolar.recogerSol();
+	contadorDeSoles.acumularSol(setaSolar.getValorSol());
+	setaSolar.cambiarTamaño();
+	setaSolar.generarSol();
+	setaSolar.recogerSol();
+	contadorDeSoles.acumularSol(setaSolar.getValorSol());
+	
+
 
 	return 0;
 }

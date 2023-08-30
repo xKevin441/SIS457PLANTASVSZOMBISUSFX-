@@ -10,28 +10,31 @@ private:
 	int tiempoVida;
 	string  color;
 	string material;
+	int valor;
 
 public:
-
+	//Metodos constructores
 	moneda();
-	moneda(string _color, string _material, int _posicionY, int _posicionX, int _tiempoVida);
+	moneda(float _posicionX, float _posicionY);
+	moneda(float _posicionX, float _posicionY, int _valor);
+	moneda(int _valor, string _color, string _material, int _posicionY, int _posicionX, int _tiempoVida);
 
-	void setmoverX(int _posicionX) { posicionX = _posicionX; }
-	int getmoverX() { return posicionX; }
+	//Metodos accesores
+	void setPosicionX(int _posicionX) { posicionX = _posicionX; }
+	int getPosicionX() { return posicionX; }
 
-	void setmoverY(int _posicionY) { posicionY = _posicionY; }
-	int getmoverY() { return posicionY; }
+	void setPosicionY(int _posicionY) { posicionY = _posicionY; }
+	int getPosicionY() { return posicionY; }
 
-	void setdesaperacer(int _tiempoVida) { tiempoVida = _tiempoVida; }
-	int getdesaparecer() { return tiempoVida; }
+	void setTiempoVida(int _tiempoVida) { tiempoVida = _tiempoVida; }
+	int getTiempoVida() { return tiempoVida; }
 
-	void setexplotar(int _tiempoVida) { tiempoVida = _tiempoVida; }
-	int getexplotar() { return tiempoVida; }
+	void setColor(string _color) { color = _color; }
+	string getColor() { return color; }
 
-	void setmonedaC(string _color) { color = _color; }
-	string getmonedaC() { return color; }
-
-	void setmonedaM(string _material) { material = _material; }
-	string getmonedaM() { return material; }
+	//Metodos comunes
+	void aparecer();
+	void aparecer(float _posicionX, float _posicionY);
+	void desaparecer();
 
 };
